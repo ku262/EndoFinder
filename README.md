@@ -11,7 +11,7 @@ This work employs self-supervised contrastive learning combined with a polyp-awa
 ## Pretrained models
 
 We provide trained models from our original experiments to allow
-others to reproduce our evaluation results ().
+others to reproduce our evaluation results (https://).
 
 ### Option 1: Install dependencies using Conda
 
