@@ -45,9 +45,9 @@ class LoadModelSetting(enum.Enum):
     vit_huge_patch14 = enum.auto()
 
     
-    def get_model(self, model_path):
+    def get_model(self, model_path, use_hash):
         config = self._get_config(self)
-        model = models_vit.__dict__[config]()
+        model = models_vit.__dict__[config](use_hash=use_hash)
 
         if config == "vit_large_patch16":
 

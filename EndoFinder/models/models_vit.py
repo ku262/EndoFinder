@@ -22,9 +22,10 @@ class HashLayer(nn.Module):
 class VisionTransformer(timm.models.vision_transformer.VisionTransformer):
     """ Vision Transformer with support for global average pooling
     """
-    def __init__(self, **kwargs):
+    def __init__(self, use_hash=False, **kwargs):
         super(VisionTransformer, self).__init__(**kwargs)
 
+        self.use_hash = use_hash
         self.embeddings = L2Norm()
         self.hash_layer = HashLayer()
 
@@ -50,7 +51,8 @@ class VisionTransformer(timm.models.vision_transformer.VisionTransformer):
         x = self.forward_features(x)
         # x = self.head(x) #FC
         x = self.embeddings(x)
-        x = self.hash_layer(x)
+        if self.use_hash:
+            x = self.hash_layer(x)
         return x
 
 

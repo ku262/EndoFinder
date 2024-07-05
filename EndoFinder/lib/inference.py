@@ -80,7 +80,7 @@ class Inference:
         # if args.model_state:
         logger.info("Loading model")
         if args.model == 'vit_large_patch16':
-            model = LoadModelSetting.get_model(LoadModelSetting[args.model], args.model_state)
+            model = LoadModelSetting.get_model(LoadModelSetting[args.model], args.model_state, args.hash)
             # model = torch.jit.load(args.model_state)
         pl_model = InferenceModel(model, ["image_num", "split", "instance_id"])
 

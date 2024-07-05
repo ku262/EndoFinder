@@ -26,6 +26,7 @@ Inference.add_parser_args(inference_parser)
 
 polyp_parser = parser.add_argument_group("POLYP")
 polyp_parser.add_argument("--polyp_path", required=True)
+polyp_parser.add_argument("--hash", default=False)
 polyp_parser.add_argument(
     "--codecs",
     default=None,
