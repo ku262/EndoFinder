@@ -13,6 +13,7 @@ This work employs self-supervised contrastive learning combined with a polyp-awa
 We provide trained models from our original experiments to allow
 others to reproduce our evaluation results (https://).
 
+## Installation
 ### Option 1: Install dependencies using Conda
 
 Install and activate conda, then create a conda environment for EndoFinder as follows:
@@ -67,9 +68,7 @@ small_224 = transforms.Compose([
 
 ```
 
-### Inference using Torchscript
-
-Torchscript files can be loaded directly in other projects without any SSCD code or dependencies.
+### Inference 
 
 ```python
 import torch
