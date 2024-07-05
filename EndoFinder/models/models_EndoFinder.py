@@ -374,11 +374,11 @@ class MaskedAutoencoderViT(nn.Module):
 
         return loss, stats
 
-    def forward(self, imgs, targets, instance_ids, mixup=False, mask_ratio=0.5):
+    def forward(self, imgs, targets, instance_ids, mixup=False, mask_ratio=0.5, entropy_weight=5):
         latent, mask, ids_restore = self.forward_encoder(imgs, targets, mask_ratio)
         pred = self.forward_decoder(latent, ids_restore)
         loss = self.forward_loss(imgs, pred, mask)
-        sscd_loss, stats = self.forward_sscd_loss(latent, instance_ids, mixup, entropy_weight=5)
+        sscd_loss, stats = self.forward_sscd_loss(latent, instance_ids, mixup, entropy_weight=entropy_weight)
         return loss, pred, mask, sscd_loss, stats
 
 

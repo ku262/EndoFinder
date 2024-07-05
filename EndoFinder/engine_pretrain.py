@@ -49,7 +49,7 @@ def train_one_epoch(model: torch.nn.Module,
 
         with torch.cuda.amp.autocast():
 
-            mae_loss, _, _, sscd_loss, sscd_stats = model(imgs, targets, instance_ids, mixup=args.mixup, mask_ratio=args.mask_ratio)
+            mae_loss, _, _, sscd_loss, sscd_stats = model(imgs, targets, instance_ids, mixup=args.mixup, mask_ratio=args.mask_ratio, entropy_weight=args.entropy_weight)
         
         
         metric_logger.update(positive_sim=sscd_stats["positive_sim"].item())

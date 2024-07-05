@@ -48,6 +48,8 @@ def get_args_parser():
 
     parser.add_argument('--mask_ratio', default=0.5, type=float,
                         help='Masking ratio (percentage of removed patches).')
+    parser.add_argument('--entropy_weight', default=5, type=float,
+                        help='Entropy weight')
     parser.add_argument('--mse_weight', default=0.5, type=float,
                         help='Reconstruction task loss weight')
 
