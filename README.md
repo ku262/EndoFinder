@@ -108,18 +108,26 @@ To reproduce evaluation results, see [Evaluation](docs/Evaluation.md).
 For information on how to train EndoFinder models, see 
 [Training](docs/Training.md).
 
-## License
+## Reference
 
+The code in this article was inspired by and references the following articles. 
+Their code has been immensely helpful to me.
+
+```
+Masked Autoencoders Are Scalable Vision Learners
+A Self-Supervised Descriptor for Image Copy Detection
+```
 
 ## Citation
 
 If you find our codebase useful, please consider giving a star :star: and cite as:
 
 ```
-@article{pizzi2022self,
-  title={A Self-Supervised Descriptor for Image Copy Detection},
-  author={Pizzi, Ed and Roy, Sreya Dutta and Ravindra, Sugosh Nagavara and Goyal, Priya and Douze, Matthijs},
-  journal={Proc. CVPR},
-  year={2022}
+@Article{EndoFinder2024,
+  title={EndoFinder: Online Image Retrieval for Explainable Colorectal Polyp Diagnosis},
+  author={Ruijie Yang, Yan Zhu, Peiyao Fu, Yizhe Zhang, Zhihua Wang, Pinghong Zhou, Xian Yang, Shuo Wang},
+  journal={MICCAI},
+  year={2024}
 }
 ```
+
