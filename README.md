@@ -5,7 +5,7 @@ recently accepted to [MICCAI 2024](https://).
 This work employs self-supervised contrastive learning combined with a polyp-aware masked reconstruction task to learn a universal representation of polyps for image retrieval.
 
 <div align="center">
-  <img width="80%" alt="EndoFinder diagram" src=".github/EndoFinder.png">
+  <img width="80%" alt="EndoFinder diagram" src="img/EndoFinder.png">
 </div>
 
 ## Pretrained models
