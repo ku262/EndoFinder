@@ -124,7 +124,7 @@ If you find our codebase useful, please consider giving a star :star: and cite a
 ```
 @Article{EndoFinder2024,
   title={EndoFinder: Online Image Retrieval for Explainable Colorectal Polyp Diagnosis},
-  author={Ruijie Yang, Yan Zhu, Peiyao Fu, Yizhe Zhang, Zhihua Wang, Pinghong Zhou, Xian Yang, Shuo Wang},
+  author={Ruijie Yang, Yan Zhu, Peiyao Fu, Yizhe Zhang, Zhihua Wang, Quanlin Li, Pinghong Zhou, Xian Yang, Shuo Wang},
   journal={MICCAI},
   year={2024}
 }
