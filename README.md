@@ -1,6 +1,6 @@
 # EndoFinder: Online Image Retrieval for Explainable Colorectal Polyp Diagnosis
 
-recently accepted to [MICCAI 2024](https://).
+recently accepted to [MICCAI 2024](https://link.springer.com/chapter/10.1007/978-3-031-72117-5_24).
 
 This work employs self-supervised contrastive learning combined with a polyp-aware masked reconstruction task to learn a universal representation of polyps for image retrieval.
 
